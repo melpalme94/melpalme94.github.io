@@ -1,4 +1,4 @@
-# 🎵 Ivan Palmeggiano - Portfólio de Trilha Sonora Épica
+# 🎵 Ivan Palmegiano - Portfólio de Trilha Sonora Épica
 
 Este projeto é um site de portfólio para apresentar composições originais de trilha sonora épica, cinematográfica e para jogos.  
 Inclui **galeria de portfólio**, **player de vídeo integrado**, **modo claro/escuro** e **layout responsivo**.
