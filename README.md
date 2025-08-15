@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🎵 Ivan Palmegiano - Portfólio de Trilha Sonora Épica
 =======
 
