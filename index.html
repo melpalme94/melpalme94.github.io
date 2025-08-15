@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfólio Música Épica | Trilha Sonora</title>
-  <meta name="description"
-    content="Portfólio de trilha sonora e música épica, compartilhando projetos e habilidades musicais.">
+  <meta name="description" content="Portfólio de trilha sonora e música épica, compartilhando projetos e habilidades musicais." />
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-
 <body>
   <!-- HEADER -->
   <header class="header">
     <div class="header__brand">
-      <a href="#home">
-        <img class="brand__logo logo-dark" src="assets/images/logos/Ivan Palmegiano-logos_white.png" alt="Logo Branca" width="80" height="80">
-        <img class="brand__logo logo-light" src="assets/images/logos/Ivan Palmegiano-logos_black (1).png" alt="Logo Preta" width="80" height="80">
+      <a href="#home" aria-label="Ir para início">
+        <img class="brand__logo logo-dark"
+             src="assets/images/logos/Ivan Palmegiano-logos_white.png"
+             alt="Logotipo IMP Produções (versão branca)"
+             width="80" height="80" loading="eager" />
+        <img class="brand__logo logo-light"
+             src="assets/images/logos/Ivan%20Palmegiano-logos_black%20(1).png"
+             alt="Logotipo IMP Produções (versão preta)"
+             width="80" height="80" loading="eager" />
       </a>
     </div>
-    <nav class="header__nav">
+
+    <nav class="header__nav" aria-label="Navegação principal">
       <ul class="menu menu--principal">
         <li><a class="menu__link active" href="#home">Home</a></li>
         <li><a class="menu__link" href="#projetos">Projetos</a></li>
@@ -30,107 +34,161 @@
         <li><a class="menu__link" href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <div class="header__toggle">
-      <i id="toggleTheme" class="bi bi-sun"></i>
-    </div>
+
+    <button class="header__toggle" id="themeButton" aria-label="Alternar tema">
+      <i id="toggleTheme" class="bi bi-sun" aria-hidden="true"></i>
+    </button>
   </header>
 
   <!-- HERO -->
-  <section id="home" class="hero">
+  <section id="home" class="hero" aria-labelledby="hero-title">
     <div class="hero__text">
-      <h1>Música Épica & Trilha Sonora Cinemática</h1>
+      <h1 id="hero-title">Música Épica &amp; Trilha Sonora Cinemática</h1>
       <p>Compositor e produtor de trilhas sonoras épicas para filmes, games e vídeos.</p>
-      <a href="#projetos" class="btn btn-primary">Ver Projetos <i class="bi bi-arrow-down-right"></i></a>
+      <a href="#projetos" class="btn btn-primary">
+        Ver Projetos <i class="bi bi-arrow-down-right" aria-hidden="true"></i>
+      </a>
     </div>
-    <div class="hero__video">
-      <iframe src="https://www.youtube.com/embed/y5e0eoTHFDs?si=jP5oqyRY3SYAHjbu" title="Trilha Sonora Epic Music"
-        allowfullscreen></iframe>
+
+    <div class="hero__video" aria-label="Vídeo destaque do YouTube">
+      <iframe
+        src="https://www.youtube.com/embed/y5e0eoTHFDs?si=jP5oqyRY3SYAHjbu"
+        title="Trilha Sonora Epic Music"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
     </div>
   </section>
 
   <!-- TECNOLOGIAS -->
-  <section class="technologies">
-    <h2>Ferramentas e Softwares</h2>
+  <section class="technologies" aria-labelledby="tech-title">
+    <h2 id="tech-title">Ferramentas e Softwares</h2>
     <ul class="technologies__list">
-      <img src="assets/images/logos/logo-cubase-svgrepo-com.svg "title="Cubase" alt="Cubase">
-      <img src="assets/images/logos/logo-reaper-svgrepo-com.svg" title="Reaper" alt="Reaper">
-      <img src="assets/images/logos/ido0LnCn2s_logos.jpeg" title="Orchestral Tools" alt="Orchestral Tools">
-      <img src="assets/images/logos/idGkK1Ayw-_1755222160033.jpeg" title="Spitfire Audio" alt="Spitfire Audio">
+      <li>
+        <img src="assets/images/logos/logo-cubase-svgrepo-com.svg"
+             title="Cubase" alt="Logo Cubase" width="72" height="72" loading="lazy" />
+      </li>
+      <li>
+        <img src="assets/images/logos/logo-reaper-svgrepo-com.svg"
+             title="Reaper" alt="Logo Reaper" width="72" height="72" loading="lazy" />
+      </li>
+      <li>
+        <img src="assets/images/logos/ido0LnCn2s_logos.jpeg"
+             title="Orchestral Tools" alt="Logo Orchestral Tools" width="72" height="72" loading="lazy" />
+      </li>
+      <li>
+        <img src="assets/images/logos/idGkK1Ayw-_1755222160033.jpeg"
+             title="Spitfire Audio" alt="Logo Spitfire Audio" width="72" height="72" loading="lazy" />
+      </li>
     </ul>
   </section>
 
   <!-- PROJETOS -->
-  <section id="projetos" class="projects">
-    <h2>Projetos Musicais</h2>
+  <section id="projetos" class="projects" aria-labelledby="projects-title">
+    <h2 id="projects-title">Projetos Musicais</h2>
+
     <div class="projects__grid">
-      <div class="project-card">
-        <img src="assets/images/Capas/The Hour of Judgment.png" alt="The Hour of Judgment">
+      <!-- Card 1 -->
+      <article class="project-card">
+        <img src="assets/images/Capas/The%20Hour%20of%20Judgment.png"
+             alt="Capa da faixa The Hour of Judgment"
+             width="640" height="640" loading="lazy" />
         <div class="project-card__content">
-          <h3>Cena De Ação</h3>
-          <p>Trilha sonora para cena de batalha em filme De Ação.</p>
-          <button class="btn btn-secondary">Ouvir Prévia <i class="bi bi-arrow-up-right"></i></button>
+          <h3>Cena de Ação</h3>
+          <p>Trilha sonora para cena de batalha em filme de ação.</p>
+          <a class="btn btn-secondary" href="#" aria-label="Ouvir prévia de Cena de Ação">
+            Ouvir Prévia <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
         </div>
-      </div>
+      </article>
 
-       <div class="project-card">
-        <img src="assets/images/projects/epic1.jpg" alt="Projeto Epic 1">
+      <!-- Card 2 -->
+      <article class="project-card">
+        <img src="assets/images/Capas/In%20Search%20of%20Hope.png"
+             alt="Capa da faixa In Search of Hope"
+             width="640" height="640" loading="lazy" />
         <div class="project-card__content">
-          <h3>Batalha Épica</h3>
-          <p>Trilha sonora para cena de batalha em filme.</p>
-          <button class="btn btn-secondary">Ouvir Prévia <i class="bi bi-arrow-up-right"></i></button>
+          <h3>Tema de Jornada (Ficção)</h3>
+          <p>Trilha sonora para cena de jornada em obra de ficção.</p>
+          <a class="btn btn-secondary" href="#" aria-label="Ouvir prévia de Tema de Jornada">
+            Ouvir Prévia <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
         </div>
-      </div>
+      </article>
 
-       <div class="project-card">
-        <img src="assets/images/projects/epic1.jpg" alt="Projeto Epic 1">
+      <!-- Card 3 -->
+      <article class="project-card">
+        <img src="assets/images/Capas/The%20Awakening%20of%20Dawn.png"
+             alt="Capa da faixa The Awakening of Dawn"
+             width="640" height="640" loading="lazy" />
         <div class="project-card__content">
-          <h3>Batalha Épica</h3>
-          <p>Trilha sonora para cena de batalha em filme.</p>
-          <button class="btn btn-secondary">Ouvir Prévia <i class="bi bi-arrow-up-right"></i></button>
+          <h3>Drama que Traz Esperança</h3>
+          <p>Trilha para cena dramática com atmosfera inspiradora.</p>
+          <a class="btn btn-secondary" href="#" aria-label="Ouvir prévia de Drama que Traz Esperança">
+            Ouvir Prévia <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <img src="assets/images/projects/epic2.jpg" alt="Projeto Epic 2">
+      <!-- Card 4 -->
+      <article class="project-card">
+        <img src="assets/images/Capas/Dreams%20and%20Reflections%20CAPA.png"
+             alt="Capa da faixa Dreams and Reflections"
+             width="640" height="640" loading="lazy" />
         <div class="project-card__content">
           <h3>Música de Aventura</h3>
-          <p>Trilha sonora para trailer de jogo.</p>
-          <button class="btn btn-secondary">Ouvir Prévia <i class="bi bi-arrow-up-right"></i></button>
+          <p>Trilha sonora para trailer com sensação de descoberta.</p>
+          <a class="btn btn-secondary" href="#" aria-label="Ouvir prévia de Música de Aventura">
+            Ouvir Prévia <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 
   <!-- SOBRE -->
-  <section id="sobre" class="about">
+  <section id="sobre" class="about" aria-labelledby="about-title">
     <div class="about__container">
-      <img src="assets/images/logos/_3fb5ae02-b3e9-4868-9360-efb80652342b.jpeg" alt="Avatar do Compositor">
+      <img src="assets/images/logos/_3fb5ae02-b3e9-4868-9360-efb80652342b.jpeg"
+           alt="Foto/Avatar do compositor"
+           width="240" height="240" loading="lazy" />
       <div>
-        <h2>Sobre mim</h2>
-        <p>Sou compositor e produtor musical, apaixonado por criar trilhas sonoras épicas para filmes, games e vídeos.
-          Trabalho com softwares profissionais e técnicas de sound design para criar atmosferas imersivas.</p>
+        <h2 id="about-title">Sobre mim</h2>
+        <p>
+          Sou compositor e produtor musical, apaixonado por criar trilhas épicas para filmes, games e vídeos.
+          Trabalho com ferramentas profissionais e técnicas de sound design para construir atmosferas imersivas.
+          Amante de música, compartilho aqui minhas composições — de trilhas orquestrais a rock e pop —
+          usando instrumentos virtuais de alta qualidade.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- CONTATO -->
-  <section id="contato" class="contact">
-    <h2>Contate-me</h2>
+  <section id="contato" class="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contate-me</h2>
     <p>Entre em contato para projetos musicais ou colaborações.</p>
     <div class="contact__links">
-      <a href="mailto:email@exemplo.com" class="btn btn-primary">ivanpalmegiano@outlook.com</a>
-      <a href="https://www.instagram.com/seuusuario" target="_blank"><i class="bi bi-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/seuusuario" target="_blank"><i class="bi bi-linkedin"></i></a>
-      <a href="https://twitter.com/seuusuario" target="_blank"><i class="bi bi-twitter"></i></a>
+      <a href="mailto:email@gmail.com" class="btn btn-primary">email@gmail.com</a>
+      <a href="https://www.instagram.com/seuusuario" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/seuusuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/seuusuario" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+        <i class="bi bi-twitter"></i>
+      </a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 Portfólio de Música Épica | Desenvolvido por [IMP Produções]</p>
+    <p>© 2025 Portfólio de Música Épica | Desenvolvido por IMP Produções</p>
   </footer>
 
   <script src="assets/js/scripts.js"></script>
 </body>
-
 </html>
